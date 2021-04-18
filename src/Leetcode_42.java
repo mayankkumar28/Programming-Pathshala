@@ -4,17 +4,17 @@ public class Leetcode_42 {
         int[] smax = new int[height.length];
         int amount=0;
         if (height.length==0) return 0;
-
+        //prefix max
         pmax[0]=height[0];
         for (int i =1; i< height.length;i++){
             pmax[i]= Math.max(pmax[i-1], height[i]);
         }
-
+        //suffix max
         smax[height.length-1]= height[height.length-1];
         for (int i = height.length-2;i>=0;i--){
             smax[i]=Math.max(smax[i+1],height[i]);
         }
-
+        //finding height
         for (int i=1; i<height.length-1;i++){
             int min_h = Math.min(pmax[i-1],smax[i+1]);
             if (min_h> height[i]){
