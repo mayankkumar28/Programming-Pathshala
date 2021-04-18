@@ -3,6 +3,7 @@ public class Leetcode_42 {
         int[] pmax = new int[height.length];
         int[] smax = new int[height.length];
         int amount=0;
+        if (height.length==0) return 0;
 
         pmax[0]=height[0];
         for (int i =1; i< height.length;i++){
