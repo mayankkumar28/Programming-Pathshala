@@ -14,7 +14,7 @@ public class Leetcode_42 {
         for (int i = height.length-2;i>=0;i--){
             smax[i]=Math.max(smax[i+1],height[i]);
         }
-        //finding height
+        //finding heights
         for (int i=1; i<height.length-1;i++){
             int min_h = Math.min(pmax[i-1],smax[i+1]);
             if (min_h> height[i]){
