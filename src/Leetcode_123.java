@@ -6,7 +6,6 @@ public class Leetcode_123 {
         //prefix profit
         int pmin = prices[0];
         int[] pre_profit = new int[n];
-        pre_profit[0]=0;
         for (int i =1;i<n;i++){
             pmin = Math.min(pmin,prices[i]);
             pre_profit[i]= Math.max(pre_profit[i-1],prices[i]-pmin);
