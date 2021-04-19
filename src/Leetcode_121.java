@@ -18,11 +18,10 @@ public class Leetcode_121 {
                 profit = Math.max(profit,smax[i+1]-min);
             }
         }
-        System.out.println();
         return profit;
     }
     public static void main(String[] args){
-        int[] prices = {7,1,5,3,6,4};
+        int[] prices = {2,1,4};
         System.out.println(maxProfit(prices));
     }
 }
