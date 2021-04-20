@@ -1,4 +1,4 @@
-class Leetcode_189_rotateArraybyK {
+public class Leetcode_189_rotateArraybyK {
     public static void rotate(int[] nums, int k) {
         int n = nums.length;
         if (n <= 1) return;
