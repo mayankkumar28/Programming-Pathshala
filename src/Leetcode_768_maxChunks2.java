@@ -1,4 +1,4 @@
-public class Leetcode_768 {
+class Leetcode_768_maxChunks2 {
     public static int maxChunksToSorted(int[] arr){
         int chunk=1;
         int pmax = Integer.MIN_VALUE;

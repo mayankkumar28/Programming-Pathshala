@@ -1,4 +1,4 @@
-public class Leetcode_121 {
+class Leetcode_121_SellStock {
     public static int maxProfit(int[] prices){
         int n =prices.length;
         int profit=0;

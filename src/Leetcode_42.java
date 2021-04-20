@@ -1,4 +1,4 @@
-public class Leetcode_42 {
+class Leetcode_42_HistogramWaterTrap {
     public static int trap(int[] height){
         int[] pmax = new int[height.length];
         int[] smax = new int[height.length];

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Codeforces_740B {
+class Codeforces_740B_AlyonaFlowers {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
