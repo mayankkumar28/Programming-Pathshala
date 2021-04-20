@@ -1,7 +1,6 @@
-package com.company;
 import java.util.Scanner;
 
-public class Codeforces855B {
+public class Codeforces_855B {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
