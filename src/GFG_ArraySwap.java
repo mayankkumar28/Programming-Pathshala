@@ -38,17 +38,16 @@ public class GFG_ArraySwap {
         /* ============ O(N2) Approach ================
 
         int s=0;
-        int e=elements;
+        int e=terms;
         while (e<=n){
             int count = 0;
             for (int j=s; j<e;j++){
-                if(arr[j]<=k){
+                if(arr[j]>k){
                     count++;
                 }
             }
             s++;e++;
-            swaps=Math.min(swaps,elements-count);
-
+            swaps=Math.min(swaps,count);
         }
         return swaps;
         */
