@@ -16,7 +16,7 @@ public class GFG_ArraySwap {
 
         //===== O(N) Approach ==========
         //First sliding window, finding terms greater equal to k;
-        for (int i =0; i<terms;i++){
+        for (int i=0; i<terms; i++){
             if (arr[i]>k){
                count++;
             }
@@ -24,11 +24,11 @@ public class GFG_ArraySwap {
         swaps= Math.min(swaps,count);
 
         //Next sliding windows, finding terms greater equal to k and taking minimum of them
-        for (int i =0,j=terms;j<n;i++,j++){
-            if (arr[i]>k){
+        for (int i=terms; i<n; i++){
+            if (arr[i-k]>k){
                 count--;
             }
-            if (arr[j]>k){
+            if (arr[i]>k){
                 count++;
             }
             swaps=Math.min(swaps,count);
