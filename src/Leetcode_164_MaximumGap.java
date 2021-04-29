@@ -20,7 +20,7 @@ public class Leetcode_164_MaximumGap {
         }
         for(int i=0;i<n;i++){
             int bucket= (nums[i]-MinNum)/Gap;
-            maxarray[bucket]= Math.max(maxarray[bucket],nums[i]);
+            maxarray[bucket]=Math.max(maxarray[bucket],nums[i]);
             minarray[bucket]=Math.min(minarray[bucket],nums[i]);
         }
         int ans=Integer.MIN_VALUE;

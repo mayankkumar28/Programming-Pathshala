@@ -14,7 +14,7 @@ public class Leetcode_565_ArrayNesting {
                     val= index;
                     index=temp;
                     count++;
-                    System.out.println(count);
+                    //System.out.println(count);
                 }
                 nums[index]= -1*(val+1);
                 ans=Math.max(ans,count);
@@ -23,8 +23,8 @@ public class Leetcode_565_ArrayNesting {
         return ans;
     }
     public static void main(String[] args){
-        //int[] nums={5,4,0,3,1,6,2};
-        int[] nums={0};
+        int[] nums={5,4,0,3,1,6,2};
+        //int[] nums={0};
         System.out.println(arrayNesting(nums));
     }
 }
