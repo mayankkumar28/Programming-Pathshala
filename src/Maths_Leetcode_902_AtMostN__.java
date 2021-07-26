@@ -5,7 +5,7 @@
 
 import java.util.ArrayList;
 
-public class Maths_Leetcode_902_AtMostN {
+public class Maths_Leetcode_902_AtMostN__ {
     public static int atMostNGivenDigitSet(String[] digits, int n) {
         int length = digits.length;
         int[] nums =new int[length];

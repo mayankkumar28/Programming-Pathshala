@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Recursion_Codeforces_55B_SmallestNumber {
+public class Recursion_Codeforces_55B_SmallestNumber__ {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         ArrayList<Long> int_arr = new ArrayList<>(4);

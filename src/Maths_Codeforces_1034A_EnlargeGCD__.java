@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class Maths_Codeforces_1034A_EnlargeGCD {
+public class Maths_Codeforces_1034A_EnlargeGCD__ {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n= sc.nextInt();

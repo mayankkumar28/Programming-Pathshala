@@ -1,7 +1,7 @@
 //Incomplete
 //Good Q
 
-public class Backtracking_GFG_RatMazeMultipleJumps {
+public class Backtracking_GFG_RatMazeMultipleJumps__ {
     public static int[][] ShortestDistance(int[][] matrix){
         int n = matrix.length;  //Matrix size
         int[][] ans = new  int[n][n];  //output answer matrix
