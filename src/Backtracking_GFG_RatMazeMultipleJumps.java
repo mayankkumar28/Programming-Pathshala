@@ -4,7 +4,6 @@ public class Backtracking_GFG_RatMazeMultipleJumps {
     public static int[][] ShortestDistance(int[][] matrix){
         int n = matrix.length;  //Matrix size
         int[][] ans = new  int[n][n];  //output answer matrix
-        System.out.println(ans[2][2]);
         int jump=matrix[0][0];//number of jumps available on starting point
         matrix[n-1][n-1]=1;  //marking destination as un-blocked
         int[][] empty ={{-1}};
@@ -15,7 +14,6 @@ public class Backtracking_GFG_RatMazeMultipleJumps {
     public static boolean backtrack(int[][] matrix,int[][] ans,int i,int j,int n,int jump){
         if (i == n-1 && j == n-1){   //Reached destination
             ans[i][j]=1;
-            System.out.println("return " +i +" " +j);
             return true;
         }
 
@@ -25,8 +23,6 @@ public class Backtracking_GFG_RatMazeMultipleJumps {
             if (j+k < n && i<n){   //Checking matrix boundaries
                 if (matrix[i][j+k]!=0 ){  //Checking if step is blocked
                     ans[i][j] = 1;  //Marking footprint
-                    System.out.println(i + " " + j);
-                    System.out.println("right ");
                     if(backtrack(matrix, ans, i, j + k, n, matrix[i][j + k])) return true;  //Finding next step
                     ans[i][j]=0;  //Un-marking footprint
 
@@ -37,8 +33,6 @@ public class Backtracking_GFG_RatMazeMultipleJumps {
             if (i+k < n && j<n){
                 if (matrix[i+k][j] !=0) {
                     ans[i][j] = 1;
-                    System.out.println(i + " " + j);
-                    System.out.println("down");
                     if(backtrack(matrix, ans, i + k, j, n, matrix[i + k][j])) return true;//Finding next step
                     ans[i][j]=0; //Un-marking footprint
                 }
