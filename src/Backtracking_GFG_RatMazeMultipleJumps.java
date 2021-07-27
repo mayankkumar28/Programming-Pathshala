@@ -1,5 +1,4 @@
-//Incomplete
-//Good Q
+//Same logic as unique paths except using a loop to execute the jumps
 
 public class Backtracking_GFG_RatMazeMultipleJumps {
     public static int[][] ShortestDistance(int[][] matrix){
