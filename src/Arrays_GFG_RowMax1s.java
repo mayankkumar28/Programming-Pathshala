@@ -9,7 +9,7 @@ public class Arrays_GFG_RowMax1s {
     static int rowWithMax1s(int[][] arr, int n, int m) {
         int row = 0;
         int col = m-1;
-        int index=-1;
+        int index = -1;
         while(row<=n-1 && col>=0){   //Keeping in boundaries
             if (arr[row][col]==1){   //Found one
                 col--;   //Shifting left

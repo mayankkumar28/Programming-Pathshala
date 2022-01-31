@@ -25,7 +25,7 @@ public class Arrays_GFG_ArraySwap {
 
         //Next sliding windows, finding terms greater equal to k and taking minimum of them
         for (int i=terms; i<n; i++){
-            if (arr[i-k]>k){
+            if (arr[i-terms]>k){
                 count--;
             }
             if (arr[i]>k){
